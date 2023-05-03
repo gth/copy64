@@ -1,6 +1,11 @@
 # copy64
 Powershell script to copy files to/from paths longer than 260 characters
 
+Draft objectives (to get this repository into a workable state)
+- central storage of various examples and works-in-progress
+- collate main code into a single working source file
+- establish version control
+
 General objectives:
 - use Powershell functions and, where possible, operate on as many Powershell versions as possible
 - overcome the Windows bugs around a directory path longer than 260 characters (e.g. the kind where Windows Explorer drag-and-drop copying fails)
