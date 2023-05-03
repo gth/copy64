@@ -34,3 +34,21 @@ Future goals:
 - move files, not just copy
 - functionality to resume previous execution (e.g. Windows crashed, or system power loss)
 - multi-threaded, if possible
+
+Reference Links
+Some Powershell, .NET and related github links:
+- https://github.com/PowerShell/PowerShell/issues/2581 - Improve Copy-Item to provide parity with Robocopy (has a good list with similar goals to those listed above!)
+- https://github.com/dotnet/runtime/issues/60903 - .NET API Proposal: DirectoryInfo.Copy / Directory.Copy
+- https://github.com/dotnet/runtime/issues/20695 - .NET Provide overloads of File.Copy that support cancellation and progress
+- https://github.com/chinhdo/txFileManager/issues/30 - Transactional File Manager .NET library: Directory/File Copy/Move Cancel Support
+
+Code Sample Links
+- https://stackoverflow.com/questions/2339313/how-to-use-correctly-copyfileex-and-copyprogressroutine-functions - large-number math
+- https://stackoverflow.com/questions/51162410/powershell-add-text-to-progressbar-gui - just a label overlay
+- Using color for row status:
+-- https://social.technet.microsoft.com/Forums/en-US/05144c37-4991-46fa-b2d8-dcb0a7f266df/wpf-powershell-listbox-change-foreground-color-of-item-if-it-matches-expression?forum=winserverpowershell
+-- https://social.technet.microsoft.com/Forums/ie/en-US/7f7d8c8c-729e-40b8-89ed-624e251fce4f/textbox-listbox-color-separate-rows?forum=winserverpowershell
+- Waiting/Progress updates
+-- https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/wait-event?view=powershell-7.3
+-- https://social.technet.microsoft.com/Forums/en-US/2541cf38-798d-4381-bf35-edae8c11ccba/forms-in-powershell-use-systemwindowsformsprogressbar-to-display-progress-in-realtime?forum=winserverpowershell
+-- https://stackoverflow.com/questions/2434133/progress-during-large-file-copy-copy-item-write-progress
