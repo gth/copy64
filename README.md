@@ -1,5 +1,5 @@
 # copy64
-Powershell script to copy files to/from paths longer than 260 characters
+Powershell script to copy files to/from paths longer than 260 characters.
 
 Draft objectives (to get this repository into a workable state)
 - central storage of various examples and works-in-progress
@@ -9,21 +9,23 @@ Draft objectives (to get this repository into a workable state)
 General objectives:
 - use Powershell functions and, where possible, operate on as many Powershell versions as possible
 - overcome the Windows bugs around a directory path longer than 260 characters (e.g. the kind where Windows Explorer drag-and-drop copying fails)
-- a graphical interface, for simplicity and nice overall clarity
-- supports multiple sources
+- a graphical user interface, for simplicity and nice overall clarity
+- support multiple sources
+- support multiple destinations
 - a trace log on screen, for detailed status and troubleshooting
 - a log file, to keep a record of what happened (do you remember if you already copied that really large file, successfully?)
 - currently using the built-in Copy-Item, which handles long paths (good) but locks up the GUI until it has finished (bad), 
-- handles local or network drives
+- handle local or network drives
+- stream-based copying, to provide progress indication (i.e. GUI progress bar), using CopyFileEx
 
 Next release goals:
-- multiple destination(s)
 - launch the copy task(s) as a separate process, to keep the GUI responsive
-- stream-based copying, to provide:
--- progress indication (progress gauge)
--- time elapsed
--- estimated time remaining
-- check prior to running copy task, that
+- stream-based copying using CopyFile2 (improved function?)
+- time elapsed
+- estimated time remaining
+- check just prior to running copy task, that:
+-- target folder exists
+-- source item (still) exists
 
 Future goals:
 - save current source(s) and destination(s) values
