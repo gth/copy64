@@ -23,6 +23,8 @@ Function Test-RegistryValue ($regkey, $name) {
 
 ### ------------ MAIN COPY FUNCTION ------------ ###
 function Copy-File {
+## Credit to https://github.com/FranciscoNabas/PowerShellPublic/blob/main/Copy-File.ps1
+## for the key parts of the function below, making CopyFileEx() useable in PowerShell.
     [CmdletBinding()]
     param (
         [Parameter(Mandatory, Position = 0)]
